@@ -13,4 +13,5 @@
 
 6. 6-concat.py is a py script that prints Welcome to Holberton School!
 
-7.
+7. 7-edges.py is a py script tha prints 3 lines of: 3 letters of the string and 2 letters of the string
+   plus middle part of the string
