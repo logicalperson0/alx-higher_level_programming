@@ -4,4 +4,6 @@
 
 2. 2-print.py is a python script that prints exactly "Programming is like building a multilingual puzzle
 
-3.
+3. 3-print_number.py is a py script that prints 98 Battery street
+
+4.
