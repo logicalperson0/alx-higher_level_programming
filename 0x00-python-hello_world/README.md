@@ -2,4 +2,6 @@
 
 1. 1-run_inline is a Shell script that runs Python code.
 
-2.
+2. 2-print.py is a python script that prints exactly "Programming is like building a multilingual puzzle
+
+3.
