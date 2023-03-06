@@ -8,4 +8,7 @@
 
 4. 4-print_float.py is a py script that prints Float: 3.14
 
-5.
+5. 5-print_string.py is a py script that prints  times a string stored in the variable str, followed by its first 
+   9 characters
+
+6. 
