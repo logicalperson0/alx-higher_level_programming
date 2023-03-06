@@ -23,10 +23,8 @@
 
 10. 
 
-11. 100-write.py is  a py script that prints exactly and that piece of art is useful - Dora Korpar, 2015-10-19
-
-    with the sys module and exits with status 1
+11. 100-write.py is  a py script that prints a message with the write sys and exits with status 1
 
 12. 101-compile is a bash script that compiles a Python script file.
 
-13.
+13. Python function that does exactly the same as a given disassembler
