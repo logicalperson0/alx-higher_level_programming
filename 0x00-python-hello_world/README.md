@@ -6,4 +6,6 @@
 
 3. 3-print_number.py is a py script that prints 98 Battery street
 
-4.
+4. 4-print_float.py is a py script that prints Float: 3.14
+
+5.
