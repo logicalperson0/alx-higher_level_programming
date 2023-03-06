@@ -18,4 +18,6 @@
 
 8. 8-concat_edges.py is a py script that prints exactly object-oriented programming with Python
 
-9.
+9. 9-easter_egg.py is a py script that prints “The Zen of Python”, by Tim Peters!
+
+10.
