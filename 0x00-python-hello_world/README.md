@@ -14,10 +14,17 @@
 6. 6-concat.py is a py script that prints Welcome to Holberton School!
 
 7. 7-edges.py is a py script tha prints 3 lines of: 3 letters of the string and 2 letters of the string
+
    plus middle part of the string without the 1st and last letters
 
 8. 8-concat_edges.py is a py script that prints exactly object-oriented programming with Python
 
 9. 9-easter_egg.py is a py script that prints “The Zen of Python”, by Tim Peters!
 
-10.
+10. 
+
+11. 100-write.py is  a py script that prints exactly and that piece of art is useful - Dora Korpar, 2015-10-19
+
+    with the sys module and exits with status 1
+
+12.
