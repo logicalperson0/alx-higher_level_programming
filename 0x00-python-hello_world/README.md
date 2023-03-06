@@ -27,4 +27,6 @@
 
     with the sys module and exits with status 1
 
-12.
+12. 101-compile is a bash script that compiles a Python script file.
+
+13.
