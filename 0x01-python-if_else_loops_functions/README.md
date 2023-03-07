@@ -15,4 +15,6 @@
 
 6. 6-print_comb3.py is a program that prints all possible different combinations of two digits
 
-7. 
+7. 7-islower.py is a function that checks for lowercase character.
+
+8. 
