@@ -11,4 +11,6 @@
 
 4. 4-print_hexa.py is a program that prints all numbers from 0 to 98 in decimal and in hexadecimal
 
-5.
+5. 5-print_comb2.py is a program that prints numbers from 0 to 99.
+
+6.
