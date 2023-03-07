@@ -27,4 +27,7 @@
 
 12. 12-fizzbuzz.py is a function that prints the fizzbuzz for multiples of 3(fizz), 5(buzz) & 15(fizzbuzz)
 
-13.
+13. 100-print_tebahpla.py is a program that prints the ASCII alphabet, in reverse order, 
+    alternating lowercase and uppercase
+
+14.
