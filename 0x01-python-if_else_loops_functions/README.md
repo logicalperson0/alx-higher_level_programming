@@ -21,4 +21,6 @@
 
 9. 9-print_last_digit.py is a function that prints the last digit of a number.
 
-10.
+10. 10-add.py is a function that adds two integers and returns the result.
+
+11.
