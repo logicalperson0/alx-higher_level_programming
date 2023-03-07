@@ -19,4 +19,6 @@
 
 8. 8-uppercase.py is a function that prints a string in uppercase followed by a new line.
 
-9. 
+9. 9-print_last_digit.py is a function that prints the last digit of a number.
+
+10.
