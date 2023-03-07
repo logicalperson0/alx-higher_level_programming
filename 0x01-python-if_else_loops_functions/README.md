@@ -25,4 +25,6 @@
 
 11. 11-pow.py is a function that computes a to the power of b and return the value
 
-12.
+12. 12-fizzbuzz.py is a function that prints the fizzbuzz for multiples of 3(fizz), 5(buzz) & 15(fizzbuzz)
+
+13.
