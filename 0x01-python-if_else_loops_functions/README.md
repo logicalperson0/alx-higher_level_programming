@@ -1,3 +1,8 @@
+If/else, loops, functions
+
+Project done during Full Stack Software Engineering studies at ALX. It aims to learn about:
+if/else statements, loops, range and functions in Python.
+
 0. 0-positive_or_negative.py is a program will assign a random signed number
    to the variable number each time it is executed.
 
@@ -35,4 +40,4 @@
 15. 101-remove_char_at.py is a function that creates a copy of the string,
     removing the character at the position n
 
-16.
+16. 102-magic_calculation.py is a Python function that does exactly the same as a given Python bytecode
