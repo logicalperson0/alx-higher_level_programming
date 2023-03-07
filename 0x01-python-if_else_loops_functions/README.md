@@ -4,4 +4,6 @@
 1. 1-last_digit.py is a program  will assign a random signed number to the variable number each time it is executed
    and prints out the number and its last digit
 
-2.
+2. 2-print_alphabet.py is a program that prints the ASCII alphabet, in lowercase, not followed by a new line.
+
+3.
