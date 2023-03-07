@@ -23,4 +23,6 @@
 
 10. 10-add.py is a function that adds two integers and returns the result.
 
-11.
+11. 11-pow.py is a function that computes a to the power of b and return the value
+
+12.
