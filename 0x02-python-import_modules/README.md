@@ -16,4 +16,6 @@
 6. 100-my_calculator.py is a program that imports all functions from the file 
    calculator_1.py and handles basic operations
 
-7.
+7. 101-easy_print.py a program that prints #pythoniscool, followed by a new line
+
+8.
