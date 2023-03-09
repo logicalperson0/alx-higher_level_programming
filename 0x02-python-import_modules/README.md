@@ -18,4 +18,4 @@
 
 7. 101-easy_print.py a program that prints #pythoniscool, followed by a new line
 
-8.
+8. 102-magic_calculation.py is a Python function that does exactly the same as a given Python bytecode
