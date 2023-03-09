@@ -8,4 +8,6 @@
 
 3. 3-infinite_add.py is a program that prints the result of the addition of all arguments
 
-4.
+4. 4-hidden_discovery.py is a program that prints all the names defined by the compiled module hidden_4.pyc
+
+5. 
