@@ -11,4 +11,6 @@
 
 5-no_c.py is a function that removes all characters c and C from a string.
 
+6-print_matrix_integer.py is a function that prints a matrix of integers.
+
 
