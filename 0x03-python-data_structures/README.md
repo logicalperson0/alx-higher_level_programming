@@ -17,4 +17,6 @@
 
 8-multiple_returns.py a function that returns a tuple with the length of a string and its first character.
 
+9-max_integer.py a function that finds the biggest integer of a list. 
+
 
