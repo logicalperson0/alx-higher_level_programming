@@ -13,4 +13,6 @@
 
 6-print_matrix_integer.py is a function that prints a matrix of integers.
 
+7-add_tuple.py is a function that adds 2 tuples.
+
 
