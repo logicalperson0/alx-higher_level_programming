@@ -25,4 +25,6 @@
 
 12-switch.py a function that switches the values of a and b
 
+13-is_palindrome.c a function in C that checks if a singly linked list is a palindrome.
+
 
