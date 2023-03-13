@@ -11,31 +11,27 @@
  */
 int is_palindrome(listint_t **head)
 {
-	int i = 0, j;
-	int *arr;
-	listint_t *curr;
+	if (head == NULL || *head == NULL)
+		return (1);
+	return (chking(head, *head));
+}
 
-	curr = *head;
+/**
+ * chking - fun to chk list
+ * @first: ptr to a ptr to beginning of list
+ * @end: ptr to end of list
+ *
+ * Return: 1 for success 0 otherwise
+ */
+int chking(listint_t **first, listint_t *end)
+{
+	if (end == NULL)
+		return (1);
 
-	arr = malloc(sizeof(int));
-
-	if (*head != NULL)
+	if (chking(first, end->next) && (*first)->n == end->n)
 	{
-		while (curr->next != NULL)
-		{
-			arr[i] = curr->n;
-			curr = curr->next;
-			i++;
-		}
-		arr[i] = curr->n;
-		for (j = 0; j <= i; j++, i--)
-		{
-			if (arr[j] != arr[i])
-			{
-				return (0);
-			}
-		}
+		*first = (*first)->next;
+		return (1);
 	}
-	free(arr);
-	return (1);
+	return (0);
 }
