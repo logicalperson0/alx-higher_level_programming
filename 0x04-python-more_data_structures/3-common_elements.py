@@ -6,5 +6,5 @@ def common_elements(set_1, set_2):
 
     for i in range(len(x)):
         if x[i] == y[i]:
-            z.append(x[i]);
+            z.append(x[i])
     return z
