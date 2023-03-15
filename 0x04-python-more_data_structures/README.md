@@ -16,4 +16,6 @@
 
 8-simple_delete.py a function that deletes a key in a dictionary.
 
+9-multiply_by_2.py a function that returns a new dictionary with all values multiplied by 2
+
 
