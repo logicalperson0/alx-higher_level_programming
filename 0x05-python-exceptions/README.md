@@ -14,4 +14,6 @@
 
 100-safe_print_integer_err.py function that prints an integer.
 
+101-safe_function.py function that executes a function safely
+
 
