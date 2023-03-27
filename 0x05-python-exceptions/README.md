@@ -12,4 +12,6 @@
 
 6-raise_exception_msg.py function that raises a name exception with a message.
 
+100-safe_print_integer_err.py function that prints an integer.
+
 
