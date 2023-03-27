@@ -8,4 +8,6 @@
 
 4-list_division.py a function that divides element by element 2 lists
 
+5-raise_exception.py a function that raises a type exception.
+
 
