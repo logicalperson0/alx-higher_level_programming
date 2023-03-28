@@ -12,4 +12,6 @@ This is a readme for the python class lesson:
 
 5-square.py a class Square that defines a square by: (based on 4-square.py)
 
+6-square.py a class Square that defines a square by: (based on 5-square.py)
+
 
