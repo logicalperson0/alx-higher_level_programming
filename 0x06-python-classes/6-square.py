@@ -58,10 +58,15 @@ class Square:
             None
         """
         s = self.__size
+        p = self.__position
         if s == 0:
             print()
         else:
-            for i in range(s):
+            for x in range(p[1]):
+                print()
+            for v in range(s):
+                for i in range(p[0]):
+                    print(" ", end="")
                 for j in range(s):
                     print("#", end="")
                 print()
