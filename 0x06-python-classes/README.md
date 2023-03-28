@@ -10,4 +10,6 @@ This is a readme for the python class lesson:
 
 4-square.py a class Square that defines a square by: (based on 3-square.py)
 
+5-square.py a class Square that defines a square by: (based on 4-square.py)
+
 
