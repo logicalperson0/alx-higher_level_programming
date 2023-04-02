@@ -68,7 +68,7 @@ So, first 'add_integer' will convert float args to int then add the 2 args
 If none is passed as input:
 ===========================
 
-	>>>add_integer(None)
+	>>> add_integer(None)
 	Traceback (most recent call last):
 	TypeError: a must be an integer
 
@@ -110,7 +110,7 @@ If more then 2 args are passed or no args are passed:
 
 	>>> add_integer(245, 400, 300, 80)
 	Traceback (most recent call last):
-	add_integer() takes from 1 to 2 positional arguments but 4 were given
+	TypeError: add_integer() takes from 1 to 2 positional arguments but 4 were given
 
 	>>> add_integer(,)
 	Traceback (most recent call last):

@@ -23,6 +23,10 @@ try:
 except Exception as e:
     print(e)
 try:
-    print(add_integer(,))
+    print(add_integer(-5))
+except Exception as e:
+    print(e)
+try:
+    print(add_integer(-9.4, -4))
 except Exception as e:
     print(e)
