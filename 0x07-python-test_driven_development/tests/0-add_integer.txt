@@ -1,0 +1,123 @@
+Test cases for 0-add_integer.py module
+======================================
+
+This module has 1 function that adds 2 int. The
+values provided must be either int or float.
+If otherwise TypeError will be raised.
+
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+Documentation
+=============
+The module's function is documented, with ALX requirements in mind.
+__doc__ is used to verify the function and module documentation
+
+	>>> mod_doc = __import__("0-add_integer").add_integer.__doc__
+	>>> print(len(mod_doc) > 0)
+	True
+
+	>>> fun_doc = __import__("0-add_integer").add_integer.__doc__
+	>>> print(len(fun_doc) > 0)
+	True
+
+Test cases
+==========
+
+'add_integer' takes in 2 args that must be either int or float and then return
+the added of the 2. Here are some test cases that will address all possible cases
+so that the function is fully operational. The 2nd arg or b is equal to 98 by default in the parameter
+
+So, with b = 98:
+
+	>>> add_integer(100)
+	198
+	>>> add_integer(1)
+	99
+
+Testing for when b is also provided:
+
+	>>> add_integer(2, 200)
+	202
+
+	>>> add_integer(0, 50)
+	50
+
+	>>> add_integer(-3, -7)
+	-10
+
+	>>> add_integer(-10, 20)
+	10
+
+	>>> add_integer(-30, 10)
+	-20
+
+Float
+=====
+We can also pass float arg
+So, first 'add_integer' will convert float args to int then add the 2 args
+
+	>>> add_integer(5.5, 10)
+	15
+
+	>>> add_integer(3.3, 4.4)
+	7
+
+	>>> add_integer(-9.4, -4)
+	-13
+
+If none is passed as input:
+===========================
+
+	>>>add_integer(None)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+TypeError casing
+================
+
+We also check for other data types like string, tuples, lists, etc. Then raise
+TypeError messages:
+
+	>>> add_integer("World", 10)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+	>>> add_integer(3.45, [2, 3, 5, 'Value'])
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+	>>> add_integer({3, 4, 5}, "ALX")
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+	>>> add_integer(5.43, "School")
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+Passing bool (True False) into the args:
+========================================
+
+	>>> add_integer(False, 90)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+	>>> add_integer(44, True)
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+If more then 2 args are passed or no args are passed:
+=====================================================
+
+	>>> add_integer(245, 400, 300, 80)
+	Traceback (most recent call last):
+	add_integer() takes from 1 to 2 positional arguments but 4 were given
+
+	>>> add_integer(,)
+	Traceback (most recent call last):
+	SyntaxError: invalid syntax
+
+For really big numbers
+======================
+
+	>>> add_integer(54983032382032930081028039043099892, 1)
+	54983032382032930081028039043099893
