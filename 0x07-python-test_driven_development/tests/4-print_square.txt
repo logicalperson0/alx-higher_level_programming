@@ -1,0 +1,59 @@
+Test cases for print_square module
+==================================
+
+This module contains a function called print_square.
+This function takes 1 arg and prints out the char #
+Where the arg is the num of the sidws.
+
+	>>> print_square = __import__('4-print_square').print_square
+
+General cases for the function
+===============================
+
+	>>> print_square(5)
+	#####
+	#####
+	#####
+	#####
+	#####
+
+	>>> print_square(2)
+	##
+	##
+
+passing in 0:
+	>>> print_square(0)
+
+passing in float in size:
+
+	>>> print_square(8.5)
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+passing in strings, lists:
+
+	>>> print_square("88")
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+	>>> print_square([33])
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+passing in neg num:
+
+	>>> print_square(-89)
+	Traceback (most recent call last):
+	ValueError: size must be >= 0
+
+passing is none:
+
+	>>> print_square(None)
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+passing in nothing:
+
+	>>> print_square()
+	Traceback (most recent call last):
+	TypeError: print_square() missing 1 required positional argument: 'size'

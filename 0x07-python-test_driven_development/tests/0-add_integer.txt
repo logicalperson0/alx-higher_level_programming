@@ -121,3 +121,14 @@ For really big numbers
 
 	>>> add_integer(54983032382032930081028039043099892, 1)
 	54983032382032930081028039043099893
+
+infinity cases
+==============
+
+	>>> add_integer(float('nan'), 88)
+	Traceback (most recent call last):
+	ValueError: cannot convert float NaN to integer
+
+	>>> add_integer(101, float('inf'))
+	Traceback (most recent call last):
+	OverflowError: cannot convert float infinity to integer
