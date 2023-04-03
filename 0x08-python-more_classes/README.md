@@ -8,4 +8,6 @@ rectangle class by the various tasks assigned:
 
 1-rectangle.py 	Class Rectangle that defines a rectangle by its width and height
 
+2-rectangle.py 	Class Rectangle that has area and permiter methods
+
 
