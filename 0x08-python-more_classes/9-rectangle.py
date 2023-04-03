@@ -140,4 +140,10 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
+        """This is rectangle is equal to a square
+        Arg:
+            size: parameter for when width == height
+        Return:
+            square
+        """
         return (cls(size, size))
