@@ -17,4 +17,6 @@ rectangle class by the various tasks assigned:
 
 6-rectangle.py 	Class Rectangle with a public class attribute that counts the number of instances
 
+7-rectangle.py 	Class Rectangle with a public class attribute to print a specific symbol
+
 
