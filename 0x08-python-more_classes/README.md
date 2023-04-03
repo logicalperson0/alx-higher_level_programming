@@ -19,4 +19,6 @@ rectangle class by the various tasks assigned:
 
 7-rectangle.py 	Class Rectangle with a public class attribute to print a specific symbol
 
+8-rectangle.py 	Class Rectangle with a method to compare instance's size
+
 
