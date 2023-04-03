@@ -15,4 +15,6 @@ rectangle class by the various tasks assigned:
 
 5-rectangle.py 	Class Rectangle that prints a message when an instance is deleted
 
+6-rectangle.py 	Class Rectangle with a public class attribute that counts the number of instances
+
 
