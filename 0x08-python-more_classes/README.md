@@ -5,7 +5,6 @@ rectangle class by the various tasks assigned:
 
 0-rectangle.py 	Empty class Rectangle that defines a rectangle
 
-
 1-rectangle.py 	Class Rectangle that defines a rectangle by its width and height
 
 2-rectangle.py 	Class Rectangle that has area and permiter methods
@@ -13,5 +12,7 @@ rectangle class by the various tasks assigned:
 3-rectangle.py 	Class Rectangle that counts with a string representation
 
 4-rectangle.py 	Class Rectangle that count with an official representation
+
+5-rectangle.py 	Class Rectangle that prints a message when an instance is deleted
 
 
