@@ -4,6 +4,19 @@ puzzle
 """
 
 
+def solqu(s):
+    """ Backtracking algo
+    Arg:
+        s: size of board
+    """
+    squ = []
+
+    for z in range(s):
+        squ.append(z)
+
+    qu(squ, 0)
+
+
 def safety(squ, nqu):
     """ if queens are safe from each other
     Arg:
@@ -57,16 +70,6 @@ def qu(squ, nqu):
                 qu(squ, nqu + 1)
 
 
-def solqu(s):
-    """ Backtracking algo
-    Arg:
-        s: size of board
-    """
-    squ = [-1 for i in range(s)]
-
-    qu(squ, 0)
-
-
 if __name__ == '__main__':
 
     import sys
@@ -77,9 +80,9 @@ if __name__ == '__main__':
 
     try:
         s = int(sys.argv[1])
-    except Exception as e:
-        e = "N must be a number"
-        print(e)
+    except Exception as x:
+        x = "N must be a number"
+        print(x)
         sys.exit(1)
 
     if s < 4:
