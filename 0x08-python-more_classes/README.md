@@ -12,4 +12,6 @@ rectangle class by the various tasks assigned:
 
 3-rectangle.py 	Class Rectangle that counts with a string representation
 
+4-rectangle.py 	Class Rectangle that count with an official representation
+
 
