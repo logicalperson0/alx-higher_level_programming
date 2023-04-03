@@ -1,5 +1,11 @@
 This is for Python - More Classes and Objects
 
-0-rectangle.py an empty class Rectangle that defines a rectangle
+The series of tasks is based on adding functionailty to a 
+rectangle class by the various tasks assigned:
+
+0-rectangle.py 	Empty class Rectangle that defines a rectangle
+
+
+1-rectangle.py 	Class Rectangle that defines a rectangle by its width and height
 
 
