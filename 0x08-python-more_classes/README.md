@@ -10,4 +10,6 @@ rectangle class by the various tasks assigned:
 
 2-rectangle.py 	Class Rectangle that has area and permiter methods
 
+3-rectangle.py 	Class Rectangle that counts with a string representation
+
 
