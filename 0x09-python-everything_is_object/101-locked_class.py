@@ -9,4 +9,7 @@ new intance att.
 
 
 class LockedClass:
+    """ This class has not intance or
+    class attributes
+    """
     __slots__ = ['first_name']
