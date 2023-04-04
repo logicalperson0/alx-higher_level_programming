@@ -10,4 +10,6 @@ These are the python functions that are needed for some of the tasks in this pro
 
 19-copy_list.py: Function that returns a copy of a list
 
+100-magic_string.py: function magic_string() that returns a string “BestSchool” n times the number of the iteration
+
 
