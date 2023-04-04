@@ -2,6 +2,7 @@
 a = (1, 2)
 b = (1, 2)
 
+print(type(a),"\n", type(b))
 print(a is b)
 
 c = (1)
