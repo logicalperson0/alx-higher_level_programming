@@ -5,6 +5,8 @@ This is a print_square module
 It contains the function print_square
 It prints the number of squares given
 """
+
+
 def print_square(size):
     """This is the function print_square that returns printed squares
     Arg:
