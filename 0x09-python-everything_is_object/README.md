@@ -6,4 +6,8 @@ This is about object oriented programming (OOP), mutability, identity and data t
 
 All .txt files store answers to the questions or tasks asked during this project
 
+These are the python functions that are needed for some of the tasks in this project:
+
+19-copy_list.py: Function that returns a copy of a list
+
 
