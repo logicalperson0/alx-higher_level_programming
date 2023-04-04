@@ -12,4 +12,7 @@ These are the python functions that are needed for some of the tasks in this pro
 
 100-magic_string.py: function magic_string() that returns a string “BestSchool” n times the number of the iteration
 
+101-locked_class.py: Class LockedClass with no class or object attribute, that prevents the user from dynamically
+creating new instance attributes, except if the new instance is called first_name
+
 
