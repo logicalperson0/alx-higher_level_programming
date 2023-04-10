@@ -5,16 +5,6 @@
 class BaseGeometry():
     """A class based on geometry
     """
-    def __init__(self, width, height):
-        """This Instantiation with width and height
-        Arg:
-            width: width of rectangle
-            height: height of rectangle
-        Return:
-            None
-        """
-        if integer_validator(name, width):
-            self.__width = width
 
     def area(self):
         e = "area() is not implemented"
