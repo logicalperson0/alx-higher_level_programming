@@ -21,4 +21,16 @@ the specified class
 
 5-base_geometry.py: Empty class BaseGeometry
 
+6-base_geometry.py: Class BaseGeometry with public instance method def area(self)
+
+7-base_geometry.py: Class BaseGeometry with public instance method that verifies if the input arg is an integer
+
+8-rectangle.py: Class Rectangle that inhertis from BaseGeometry
+
+9-rectangle.py: Class Rectangle that inhertis from BaseGeometry, with area() method implemented
+
+10-square.py: Class Square that inherits from Rectangle
+
+11-square.py: Class Square that inherits from Rectangle, with str() method
+
 
