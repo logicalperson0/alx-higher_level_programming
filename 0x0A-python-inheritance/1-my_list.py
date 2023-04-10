@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """A class that inherits from list which
-has a method print_sorted that prints 
+has a method print_sorted that prints
 the list but sorted
 """
 
