@@ -1,0 +1,71 @@
+Test cases for 1-my_list.py file
+================================
+
+Importing the function be tested:
+
+	>>> MyList = __import__('1-my_list').MyList
+
+printing in general cases:
+	>>> my = MyList()
+	>>> my.append(4454)
+	>>> my.append(934984)
+	>>> my.append(3)
+	>>> my.append(555)
+
+	>>> my.print_sorted()
+	[3, 555, 4454, 934984]
+
+printing in neg num:
+	>>> my = MyList()
+	>>> my.append(-5)
+	>>> my.append(-10)
+	>>> my.append(-1)
+	>>> my.append(-13)
+	>>> my.append(-1233)
+	>>> my.append(-13)
+
+	>>> my.print_sorted()
+	[-1233, -13, -13, -10, -5, -1]
+
+printing a single num:
+	>>> my = MyList()
+	>>> my.append(-5)
+
+	>>> my.print_sorted()
+	[-5]
+
+printing empty:
+	>>> my = MyList()
+	>>> my.print_sorted()
+	[]
+
+printing subclass and isinstance:
+	>>> my = MyList()
+	>>> issubclass(MyList, list)
+	True
+	>>> isinstance(my, list)
+	True
+	>>> type(my) == MyList
+	True
+	>>> type(my.print_sorted)
+	<class 'method'>
+
+printing errors:
+	>>> my = MyList()
+	>>> my.print_sorted([-4, 0, 2, 3, 50, -9])
+	Traceback (most recent call last):
+	TypeError: print_sorted() takes 1 positional argument but 2 were given
+
+chk if original list is altered:
+	>>> my = MyList()
+	>>> my.append(-5)
+	>>> my.append(-10)
+	>>> my.append(-1)
+	>>> my.append(-13)
+	>>> my.append(-1233)
+	>>> my.append(-13)
+
+	>>> my.print_sorted()
+	[-1233, -13, -13, -10, -5, -1]
+	>>> print(my)
+	[-5, -10, -1, -13, -1233, -13]

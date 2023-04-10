@@ -8,4 +8,6 @@ Files:
 
 0-lookup.py: Function that returns the list of available attributes and methods of an object
 
+1-my_list.py: Class MyList that inhertis from list
+
 
