@@ -19,4 +19,6 @@ of a class that inherited from, the specified class
 4-inherits_from.py: Function that returns True if the object is an instance of a class that inherited from 
 the specified class
 
+5-base_geometry.py: Empty class BaseGeometry
+
 
