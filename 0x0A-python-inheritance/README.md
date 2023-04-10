@@ -33,4 +33,6 @@ the specified class
 
 11-square.py: Class Square that inherits from Rectangle, with str() method
 
+100-my_int.py: Class MyInt that inhertis from int. Its == and != operators are inverted
+
 
