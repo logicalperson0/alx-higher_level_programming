@@ -44,18 +44,26 @@ General cases and errors:
 	Traceback (most recent call last):
 	SyntaxError: invalid syntax
 
-	>>> b.integer_validator('age', 90, 98, 99)
+	>>> b.integer_validator("age", 90, 98, 99)
 	Traceback (most recent call last):
 	TypeError: integer_validator() takes 3 positional arguments but 5 were given
 
-	>>> b.integer_validator('age', {67})
+	>>> b.integer_validator("age", {67})
 	Traceback (most recent call last):
 	TypeError: age must be an integer
 
-	>>> b.integer_validator('age', [67])
+	>>> b.integer_validator("age", [67])
 	Traceback (most recent call last):
 	TypeError: age must be an integer
 
-	>>> b.integer_validator('age', None)
+	>>> b.integer_validator("age", None)
+	Traceback (most recent call last):
+	TypeError: age must be an integer
+
+	>>> b.integer_validator("age", '56')
+	Traceback (most recent call last):
+	TypeError: age must be an integer
+
+	>>> b.integer_validator("age", (6,))
 	Traceback (most recent call last):
 	TypeError: age must be an integer
