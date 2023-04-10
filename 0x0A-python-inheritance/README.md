@@ -16,4 +16,7 @@ otherwise False
 3-is_kind_of_class.py: Function that returns True if the object is an instance of, or if the object is an instance
 of a class that inherited from, the specified class
 
+4-inherits_from.py: Function that returns True if the object is an instance of a class that inherited from 
+the specified class
+
 
