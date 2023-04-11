@@ -11,7 +11,7 @@ def append_write(filename="", text=""):
     Return: num of char
     """
     chars = 0
-    with open(filename, 'a+', encoding='UTF8') as app:
+    with open(filename, 'a', encoding='UTF8') as app:
         app.write(text)
 
     with open(filename, 'r') as loop:
