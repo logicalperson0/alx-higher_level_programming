@@ -12,10 +12,9 @@ def append_write(filename="", text=""):
     """
     chars = 0
     with open(filename, 'a', encoding='UTF8') as app:
-        app.write(text)
+        loop = app.write(text)
 
-    with open(filename, 'r') as loop:
-        for x in loop.read():
+        for x in range(loop):
             chars += 1
 
-    return chars
+        return chars
