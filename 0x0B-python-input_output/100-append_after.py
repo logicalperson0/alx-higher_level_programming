@@ -14,9 +14,12 @@ def append_after(filename="", search_string="", new_string=""):
     """
     lx = []
     with open(filename, 'r') as r:
-        while True:
+        while 1:
             x = r.readline()
-            if search_string in x :
+
+            if x == "":
+                break
+            if search_string in x:
                 lx += [new_string]
 
             lx += [x]
