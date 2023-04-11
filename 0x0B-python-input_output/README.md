@@ -25,4 +25,6 @@ Files:
 8-class_to_json.py: Function that returns the dictionary description with a simple data structure for
 JSON serialization of an object
 
+9-student.py: Class Student that defines a student by its first_name, last_name and age
+
 
