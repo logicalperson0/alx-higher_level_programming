@@ -24,5 +24,5 @@ def append_after(filename="", search_string="", new_string=""):
             if search_string in x:
                 lx += [new_string]
 
-    with open(filename, 'a') as w:
+    with open(filename, 'w') as w:
         w.writelines(lx)
