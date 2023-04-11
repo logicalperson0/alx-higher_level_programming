@@ -19,10 +19,10 @@ def append_after(filename="", search_string="", new_string=""):
 
             if x == "":
                 break
+            lx += [x]
+
             if search_string in x:
                 lx += [new_string]
-
-            lx += [x]
 
     with open(filename, 'a') as w:
         w.writelines(lx)
