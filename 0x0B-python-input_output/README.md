@@ -27,4 +27,6 @@ JSON serialization of an object
 
 9-student.py: Class Student that defines a student by its first_name, last_name and age
 
+10-student.py: Class Student that defines a student with a method to retrieve a JSON representation
+
 
