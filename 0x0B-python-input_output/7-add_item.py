@@ -10,11 +10,12 @@ sf = __import__('5-save_to_json_file').save_to_json_file
 lf = __import__('6-load_from_json_file').load_from_json_file
 
 lx = []
+st = "add_item.json"
 
-if os.path.exists("add_item.json"):
-    lx = lf("add_item.json")
+if os.path.exists(st):
+    lx = lf(st)
 
 for x in argv[1:]:
     lx.append(x)
 
-sf(lx, "add_item.json")
+sf(lx, st)
