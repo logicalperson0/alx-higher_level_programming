@@ -31,4 +31,8 @@ JSON serialization of an object
 
 11-student.py: Class Student that defines a student with a method to load a JSON object
 
+12-pascal_triangle.py: Function that returns a list of lists of integers representing the Pascal¡s triangle of n
+
+100-append_after.py: Function that inserts a line of text to a file, after each line containing a specific string
+
 
