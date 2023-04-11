@@ -10,7 +10,7 @@ def write_file(filename="", text=""):
         filename: file to write to
         text: txt to write
     Return:
-        None
+        num of char
     """
     chars = 0
 
