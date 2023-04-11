@@ -29,4 +29,6 @@ JSON serialization of an object
 
 10-student.py: Class Student that defines a student with a method to retrieve a JSON representation
 
+11-student.py: Class Student that defines a student with a method to load a JSON object
+
 
