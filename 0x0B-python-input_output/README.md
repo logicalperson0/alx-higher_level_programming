@@ -20,4 +20,6 @@ Files:
 
 6-load_from_json_file.py: Function that creates an Object from a "JSON file"
 
+7-add_item.py: Script that adds all arguments to a Python list, and then save them to add_item.json
+
 
