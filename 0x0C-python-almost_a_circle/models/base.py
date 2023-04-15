@@ -1,0 +1,91 @@
+#!/usr/bin/python3
+"""Class called Base"""
+
+
+import json
+
+
+class Base:
+    """The base class of the package
+    Arg:
+        nb_objects: 1st parameter private attr
+    Return:
+        None
+    """
+    __nb_objects = 0
+
+    def __init__(self, id=None):
+        """This is the constructor
+        Arg:
+            id: 1st parameter public attr
+        """
+        if id != None:
+            self.id = id
+
+        else:
+            Base.__nb_objects += 1
+
+            self.id = Base.__nb_objects
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """returns the JSON string representation of
+        list_dictionaries
+        Arg:
+            list_dictionaries: dict parameter
+        Return:
+            Json
+        """
+        if list_dictionaries is None or list_dictionaries == "[]":
+            return ([])
+
+        return (json.dumps(list_dictionaries))
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """writes the JSON string representation
+        of list_objs to a file
+        Arg:
+            lsit_objs: list
+        """
+        file_n = "{}.json". format(cls.__name__)
+        li = []
+
+        if list_objs is not None:
+            for x in range(len(list_objs)):
+                li.append(list_objs[x].to_dictionary())
+
+        di = cls.to_json_string(li)
+
+        with open(file_n, "w") as files:
+            files.write(di)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """returns the list of the JSON string
+        representation json_string
+        Arg:
+            json_string: json parameter
+        Return:
+            dictionary
+        """
+        if json_string is None or json_string == "":
+            return ([])
+
+        return (json.loads(json_string))
+
+    @classmethod
+    def create(cls, **dictionary):
+        """returns an instance with all attributes already set
+        Arg:
+            dictionary: double ptr to dict parameter
+        Return:
+            mock
+        """
+        if cls.__name__ == "Square":
+            mock = cls(3)
+        if cls.__name__ == "Rectangle":
+            mock = cls(3, 1)
+        mock.update(**dictionary)
+
+        return (mock)
