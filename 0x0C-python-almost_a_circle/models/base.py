@@ -3,6 +3,7 @@
 
 
 import json
+from pathlib import Path
 
 
 class Base:
@@ -19,7 +20,7 @@ class Base:
         Arg:
             id: 1st parameter public attr
         """
-        if id != None:
+        if id is not None:
             self.id = id
 
         else:
@@ -89,3 +90,22 @@ class Base:
         mock.update(**dictionary)
 
         return (mock)
+
+    @classmethod
+    def load_from_file(cls):
+        """ returns a list of instances
+        Return:
+            instances from a file
+        """
+        file_n = "{}.json". format(cls.__name__)
+        if Path(file_n).is_file() is False:
+            return ([])
+
+        with open(file_n, "r") as jsons_f:
+            li = jsons_f.read()
+        lis = cls.from_json_string(li)
+        arr = []
+
+        for x in range(len(lis)):
+            arr.append(cls.create(**lis[x]))
+        return (arr)

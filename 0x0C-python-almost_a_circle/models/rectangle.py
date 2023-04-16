@@ -97,7 +97,7 @@ class Rectangle(Base):
         """
         wi = self.__width
         he = self.__height
-        
+
         for down in range(self.__y):
             print()
         for j in range(he):

@@ -1,4 +1,4 @@
-    #!/usr/bin/python3
+#!/usr/bin/python3
 """Class called square"""
 
 
@@ -34,7 +34,7 @@ class Square(Rectangle):
     @size.setter
     def size(self, res):
         """Setter for size"""
-        
+
         self.width = res
         self.height = res
 
