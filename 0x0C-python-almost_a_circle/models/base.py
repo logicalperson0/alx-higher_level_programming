@@ -1,18 +1,16 @@
 #!/usr/bin/python3
-"""Class called Base"""
-
+"""Class called Base
+this is the base class from which
+all other class in this package
+inherit from
+"""
 
 import json
 from pathlib import Path
 
 
 class Base:
-    """The base class of the package
-    Arg:
-        nb_objects: 1st parameter private attr
-    Return:
-        None
-    """
+    """The base class of the package"""
     __nb_objects = 0
 
     def __init__(self, id=None):
