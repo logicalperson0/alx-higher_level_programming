@@ -84,10 +84,10 @@ class Base:
         Return:
             mock
         """
-        if cls.__name__ == "Square":
-            mock = cls(3)
-        elif cls.__name__ == "Rectangle":
+        if cls.__name__ == "Rectangle":
             mock = cls(3, 3)
+        elif cls.__name__ == "Square":
+            mock = cls(3)
         mock.update(**dictionary)
 
         return (mock)
