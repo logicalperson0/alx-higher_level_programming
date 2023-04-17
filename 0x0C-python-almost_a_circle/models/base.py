@@ -38,7 +38,7 @@ class Base:
         Return:
             Json
         """
-        if list_dictionaries is None or list_dictionaries == "[]":
+        if list_dictionaries is None:
             return ([])
 
         return (json.dumps(list_dictionaries))
@@ -86,8 +86,8 @@ class Base:
         """
         if cls.__name__ == "Square":
             mock = cls(3)
-        if cls.__name__ == "Rectangle":
-            mock = cls(3, 1)
+        elif cls.__name__ == "Rectangle":
+            mock = cls(3, 4)
         mock.update(**dictionary)
 
         return (mock)
