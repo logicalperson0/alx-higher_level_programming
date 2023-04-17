@@ -38,8 +38,8 @@ class Base:
         Return:
             Json
         """
-        if list_dictionaries is None:
-            return ([])
+        if list_dictionaries is None or list_dictionaries == "[]":
+            return ("[]")
 
         return (json.dumps(list_dictionaries))
 
@@ -87,7 +87,7 @@ class Base:
         if cls.__name__ == "Square":
             mock = cls(3)
         elif cls.__name__ == "Rectangle":
-            mock = cls(3, 4)
+            mock = cls(3, 3)
         mock.update(**dictionary)
 
         return (mock)
@@ -99,7 +99,7 @@ class Base:
             instances from a file
         """
         file_n = "{}.json". format(cls.__name__)
-        if pathlib.Path(file_n).is_file() is False:
+        if pathlib.Path(file_n).exists() is False:
             return ([])
 
         with open(file_n, "r") as jsons_f:
