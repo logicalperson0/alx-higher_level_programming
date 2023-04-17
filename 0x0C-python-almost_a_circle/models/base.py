@@ -47,7 +47,7 @@ class Base:
         """writes the JSON string representation
         of list_objs to a file
         Arg:
-            lsit_objs: list
+            list_objs: list
         """
         file_n = "{}.json". format(cls.__name__)
         li = []
