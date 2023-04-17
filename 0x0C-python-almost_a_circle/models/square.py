@@ -44,7 +44,7 @@ class Square(Rectangle):
             args: assigns attr
             kwargs: assigns attr by key, value
         """
-        if len(args) != 0:
+        if len(args) > 0:
             for x, arg in enumerate(args):
                 if x == 0:
                     self.id = arg
