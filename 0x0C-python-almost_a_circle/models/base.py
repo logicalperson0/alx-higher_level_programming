@@ -7,7 +7,7 @@ inherit from
 """
 
 import json
-from pathlib import Path
+import pathlib
 
 
 class Base:
@@ -99,7 +99,7 @@ class Base:
             instances from a file
         """
         file_n = "{}.json". format(cls.__name__)
-        if Path(file_n).is_file() is False:
+        if pathlib.Path(file_n).is_file() is False:
             return ([])
 
         with open(file_n, "r") as jsons_f:
