@@ -48,11 +48,11 @@ class Square(Rectangle):
             for x, arg in enumerate(args):
                 if x == 0:
                     self.id = arg
-                elif x == 1:
+                if x == 1:
                     self.width = arg
-                elif x == 2:
+                if x == 2:
                     self.x = arg
-                elif x == 3:
+                if x == 3:
                     self.y = arg
         else:
             if 'id' in kwargs:
