@@ -10,7 +10,9 @@ from pathlib import Path
 
 
 class Base:
-    """The base class of the package"""
+    """The base class of the package
+    has 1 private attr
+    """
     __nb_objects = 0
 
     def __init__(self, id=None):
@@ -91,7 +93,7 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        """ returns a list of instances
+        """returns a list of instances
         Return:
             instances from a file
         """
