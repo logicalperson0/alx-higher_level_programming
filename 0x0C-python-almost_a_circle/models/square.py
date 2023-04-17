@@ -55,15 +55,14 @@ class Square(Rectangle):
                 elif x == 3:
                     self.y = arg
         else:
-            for kwarg in kwargs.keys():
-                if kwarg == 'id':
-                    self.id = kwargs['id']
-                if kwarg == 'size':
-                    self.width = kwargs['size']
-                if kwarg == 'x':
-                    self.x = kwargs['x']
-                if kwarg == 'y':
-                    self.y = kwargs['y']
+            if 'id' in kwargs:
+                self.id = kwargs['id']
+            elif 'size' in kwargs:
+                self.width = kwargs['size']
+            elif 'x' in kwargs:
+                self.x = kwargs['x']
+            elif 'y' in kwargs:
+                self.y = kwargs['y']
 
     def to_dictionary(self):
         """returns a dict of class square
