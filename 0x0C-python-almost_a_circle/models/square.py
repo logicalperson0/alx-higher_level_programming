@@ -58,11 +58,11 @@ class Square(Rectangle):
             for kwarg in kwargs.keys():
                 if kwarg == 'id':
                     self.id = kwargs['id']
-                elif kwarg == 'size':
+                if kwarg == 'size':
                     self.width = kwargs['size']
-                elif kwarg == 'x':
+                if kwarg == 'x':
                     self.x = kwargs['x']
-                elif kwarg == 'y':
+                if kwarg == 'y':
                     self.y = kwargs['y']
 
     def to_dictionary(self):
