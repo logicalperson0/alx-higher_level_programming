@@ -29,4 +29,16 @@ All the following files are scripts of MySQL:
 
 7-insert_value.sql: Inserts a new row in the table first_table of the database hbtn_0c_0
 
+8-count_89.sql: Displays the number of records with id=89 in the table first_table of the database hbtn_0c_0
+
+9-full_creation.sql: Creates a table second_table in the database hbtn_0c_0
+
+10-top_score.sql: Lists all records of the table second_table of the database hbtn_0c_0
+
+11-best_score.sql: Lists all records with a score >= 10 in the table second_table of the database hbtn_0c_0
+
+12-no_cheating.sql: Updates the score of Bob to 10 in the table second_table
+
+13-change_class.sql: Removes all records with a score <= 5 in the table second_table of the database hbtn_0c_0
+
 
