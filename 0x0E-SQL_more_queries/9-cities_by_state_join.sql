@@ -2,4 +2,4 @@
 -- display: cities.id - cities.name - states.name
 SELECT cities.id, cities.name, states.name
 FROM cities
-JOIN states ON states.id;
+JOIN states ON cities.id = states.id;
