@@ -9,6 +9,8 @@ if (a.length <= 3) {
     if (a[i] > max) {
       sec = max;
       max = a[i];
+    } else if (a[i] > sec && a[i] !== max) {
+      sec = a[i];
     }
   }
   console.log(sec);
