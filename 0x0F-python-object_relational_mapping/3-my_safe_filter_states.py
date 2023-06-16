@@ -13,8 +13,8 @@ if __name__ == '__main__':
     cur = db.cursor()
 
     cur.execute("SELECT * FROM states \
-                 WHERE name LIKE '{:s}' \
-                 ORDER BY id ASC".format(argv[4],))
+                 WHERE name = %s \
+                 ORDER BY id ASC;", (argv[4],))
 
     states = cur.fetchall()
 
