@@ -18,7 +18,8 @@ if __name__ == '__main__':
     states = cur.fetchall()
 
     for i in states:
-        print(i)
+        if i[1][0] == 'N':
+            print(i)
 
     cur.close()
     db.close()
