@@ -18,13 +18,20 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    results = session.query(State).all()
+    # results = session.query(State).all()
 
+    results = session.query(State).filter(sys.argv[4] == State.name).first()
+
+    if not results:
+        print('Not found')
+    else:
+        print(results.id)
+
+    """
     for i in results:
-        if sys.argv[4] == i.name:
-            break
-
-    if sys.argv[4] == i.name:
-        print(i.id)
+       if sys.argv[4] == i.name:
+           print(i.id)
     else:
         print('Not found')
+
+    """
