@@ -39,3 +39,17 @@ model_state.py 	Contains the class definition of a State and an instance Base = 
 
 7-model_state_fetch_all.py 	Lists all State objects from the database hbtn_0e_6_usa
 
+8-model_state_fetch_first.py 	Prints the first State object from the database hbtn_0e_6_usa
+
+9-model_state_filter_a.py 	Lists all State objects that contain the letter a from the database hbtn_0e_6_usa
+
+10-model_state_my_get.py 	Prints the State object with the name passed as argument from the database hbtn_0e_6_usa
+
+11-model_state_insert.py 	Adds the State object "Louisiana" to the database hbtn_0e_6_usa
+
+12-model_state_update_id_2.py 	Script that changes the name of a State object from the database hbtn_0e_6_usa
+
+13-model_state_delete_a.py 	Script that deletes all State objects with the name containing the letter a from the database hbtn_0e_6_usa
+model_city.py 	Contains the class definition of a City, which inherits from Base
+
+14-model_city_fetch_by_state.py 	Prints all City objects from the database hbtn_0e_14_usa
