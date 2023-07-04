@@ -8,7 +8,7 @@ import sys
 
 
 if __name__ == "__main__":
-    urls = "https://api.github.com/use"
+    urls = "https://api.github.com/user"
     resp = auth.HTTPBasicAuth(sys.argv[1], sys.argv[2])
 
     results = get(urls, auth=resp)
