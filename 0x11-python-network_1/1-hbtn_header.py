@@ -6,7 +6,9 @@ displays the value of the X-Request-Id variable: header of the response
 import sys
 import urllib.request
 
-url = sys.argv[1]
-with urllib.request.urlopen(url) as resp:
-    # html_head = resp.read()
-    print(resp.headers['X-Request-Id'])
+
+if __name__ == "__main__":
+    urls = sys.argv[1]
+    with urllib.request.urlopen(urls) as resp:
+        # html_head = resp.info()
+        print(resp.headers['X-Request-Id'])
