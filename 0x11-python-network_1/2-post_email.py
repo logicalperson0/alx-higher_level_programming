@@ -4,7 +4,7 @@ Python script that takes in a URL and an email, sends a POST request
 to the passed URL with the email as a parameter
 """
 import sys
-import urllib.request
+from urllib import request, parse
 
 
 if __name__ == "__main__":
@@ -15,5 +15,5 @@ if __name__ == "__main__":
 
     req = request.Request(urls, dat)
 
-    with urllib.request.urlopen(req) as resp:
+    with request.urlopen(req) as resp:
         print(resp.read().decode('utf-8'))
