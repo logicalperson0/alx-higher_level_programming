@@ -10,4 +10,4 @@ if __name__ == "__main__":
     urls = sys.argv[1]
     emails = {'email': sys.argv[2]}
     resp = requests.post(urls, data=emails)
-    print(resp)
+    print(resp.text)
