@@ -9,4 +9,7 @@ import sys
 if __name__ == "__main__":
     urls = sys.argv[1]
     resp = requests.get(urls)
-    print(resp.headers['X-Request-Id'])
+    try:
+        print(resp.headers['X-Request-Id'])
+    except Exception:
+        pass
