@@ -2,12 +2,12 @@
 const request = require('request');
 const movieId = process.argv[2];
 
-function getMovieCharacters(movieId) {
+function getMovieCharacters (movieId) {
   const url = `https://swapi.dev/api/films/${movieId}/`;
 
   request.get(url, (error, response, body) => {
     if (error) {
-      console.error('Error:', error);
+      console.log(error);
     } else {
       const movieData = JSON.parse(body);
       const characters = movieData.characters;
@@ -16,7 +16,7 @@ function getMovieCharacters(movieId) {
         return new Promise((resolve) => {
           request.get(characterUrl, (error, response, body) => {
             if (error) {
-              console.error('Error:', error);
+              console.log(error);
               resolve(null);
             } else {
               const characterData = JSON.parse(body);
@@ -33,7 +33,7 @@ function getMovieCharacters(movieId) {
           });
         })
         .catch((error) => {
-          console.error('Error:', error);
+          console.log(error);
         });
     }
   });
