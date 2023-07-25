@@ -1,12 +1,13 @@
 #!/usr/bin/node
 const requesting = require('request');
 const urls = process.argv[2];
-const dict = {};
 
 requesting(urls, (error, response, body) => {
   if (error) console.log(error);
 
   const parsing = JSON.parse(body);
+
+  const dict = {};
 
   for (let x = 0; x < parsing.length; x++) {
     if (parsing[x].completed === true) {
