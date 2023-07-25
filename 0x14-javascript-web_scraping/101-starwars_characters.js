@@ -13,14 +13,14 @@ requesting(urls, function (error, response, body) {
     } else {
       id -= 3;
     }
-    for (const i of results) {
-      if (i.episode_id === id) {
-        characters = i.characters;
+    for (let i = 0; i < results.length; i++) {
+      if (results[i].episode_id === id) {
+        characters = results[i].characters;
         break;
       }
     }
-    for (const j of characters) {
-      requesting(j, function (error, response, body) {
+    for (let j = 0; j < characters.length; j++) {
+      requesting(characters[j], function (error, response, body) {
         if (error == null) {
           const people = JSON.parse(body).name;
 
