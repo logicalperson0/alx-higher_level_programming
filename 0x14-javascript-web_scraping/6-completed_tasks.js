@@ -8,12 +8,12 @@ requesting(urls, (error, response, body) => {
 
   const parsing = JSON.parse(body);
 
-  for (const x of parsing) {
-    if (x.completed === true) {
-      if (dict[x.userId] === undefined) {
-        dict[x.userId] = 1;
+  for (let x = 0; x < parsing.length; x++) {
+    if (parsing[x].completed === true) {
+      if (dict[parsing[x].userId] === undefined) {
+        dict[parsing[x].userId] = 0;
       } else {
-        dict[x.userId]++;
+        dict[parsing[x].userId]++;
       }
     }
   }
