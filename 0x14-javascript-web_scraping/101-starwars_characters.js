@@ -2,12 +2,12 @@
 const request = require('request');
 const movieId = process.argv[2];
 
-function getMovieCharacters(movieId) {
+function getMovieCharacters (movieId) {
   const url = `https://swapi-api.alx-tools.com/api/films/${movieId}/`;
 
   request.get(url, (error, response, body) => {
     if (error) {
-      console.error('Error:', error);
+      console.log(error);
     } else {
       const movieData = JSON.parse(body);
       const characters = movieData.characters;
@@ -15,10 +15,10 @@ function getMovieCharacters(movieId) {
 
       let count = 0;
 
-      function fetchCharacter(characterUrl) {
+      function fetchCharacter (characterUrl) {
         request.get(characterUrl, (error, response, body) => {
           if (error) {
-            console.error('Error:', error);
+            console.log(error);
           } else {
             const characterData = JSON.parse(body);
             characterNames.push(characterData.name);
